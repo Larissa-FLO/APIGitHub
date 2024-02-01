@@ -1,22 +1,116 @@
 
 .container {
-  max-width: 500px;
+  max-width: 1000px;
   margin: 0 auto;
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  padding: 10rem;
 
 }
-.icone {
+
+.paginaPesquisa {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40rem;
+padding: 3rem;
+}
+
+.busca {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+}
+
+.busca input {
+  outline: none;
+  border: none;
+  background: transparent;
+  color: #fff;
+  padding: 10px 10px;
+  border-right: 1px solid #fff;
+  width: auto;
+}
+
+.busca button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.busca button img {
+  display: flex;
   width: 30px;
+}
+
+.busca button:hover {
+  opacity: 0.5;
+}
+
+.resultadoPesquisa {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width: 70rem;
+padding: 3rem;
+box-shadow: rgba(255, 255, 255, 0.25) 0px 6px 12px -2px, rgba(255, 255, 255, 0.3) 0px 3px 7px -3px;
+border-radius: 7rem;
+gap: 3rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+}
+
+.dadosPrincipais {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  gap: .5rem;
+}
+
+.dadosPrincipais h2 {
+  font-size: 3rem;
+}
+
+.dadosPrincipais h4 {
+  font-size: 1.5rem;
+}
+
+.fotoPerfil img {
+  border-radius: 50%;
+  width: 25rem;
+}
+
+.icone {
+  width: 40px;
 }
  .projeto {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 5px;
+  gap: 7px;
   height: 40px;
+  padding: 5px;
+  font-size: large;
+  margin-left: 3rem;
+ }
+
+ .projeto:hover {
+  transform: scale(1.1);
+  transition: all .3s;
  }
 
  .projeto h4 {
@@ -25,10 +119,12 @@
 
  .repositorio {
   background-color: rgb(201, 201, 201);
+  min-width: 60rem;
   min-height: 500px;
   padding: 10px 5px;
   border-radius: 7px;
   box-shadow: 0 0 15px #232322;
+  border-radius: 4rem;
  }
 
  a:link {
@@ -39,34 +135,11 @@
 
 a:hover {
  text-decoration: none; 
+ font-weight: bold;
+ 
 }
 
-.busca {
-  margin: 2rem 0;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-
+a:visited {
+  color: black;
 }
 
-.busca input {
-  outline: none;
-  border: none;
-  background: transparent;
-  color: #fff;
-  padding: 10px 10px;
-  border-right: 1px solid #fff;
-}
-
-.busca button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-
-  color: #fff;
-
-
-}
-
-.busca button:hover {
-  opacity: 0.5;
-}

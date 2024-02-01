@@ -28,7 +28,7 @@ setReposUsuario(response.data)
       <div className='paginaPesquisa'>
         <div className='busca'>
           <input type="text" value={usuario} name="" id="" onChange={e => setUsuario(e.target.value)}/>
-          <button onClick={handleBuscar}>Pesquisar</button>
+          <button onClick={handleBuscar}><img src="https://i.imgur.com/lOMVTIE.png"/></button>
         </div>
         <div className='imagemBusca'>
         {/*imagem de fundo*/}

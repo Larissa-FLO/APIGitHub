@@ -7,7 +7,7 @@ export default function CardRepo({project}) {
         <>
         <div className="projeto">
             <span><img src={icon} alt="" className="icone"/></span>
-            <a href={project.clone_url}> {project.name}</a>
+            <a href={project.clone_url} target="blank"> {project.name}</a>
 
         </div>
         
